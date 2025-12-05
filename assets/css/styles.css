@@ -587,6 +587,7 @@ ul {
   
   .hero-buttons {
       justify-content: center;
+      flex-flow: column;
   }
   
   .social-icons {
@@ -617,7 +618,7 @@ ul {
   
   .timeline-item:nth-child(odd) .timeline-date,
   .timeline-item:nth-child(even) .timeline-date {
-      left: 15px;
+      left: 75px;
       right: auto;
       text-align: left;
       top: -30px;
@@ -632,23 +633,38 @@ ul {
   .contact-content {
       flex-direction: column;
   }
+  .stat-item p {
+    text-align: center;
+  }
+  .primary-btn {
+    width: 100%;
+    text-align: center;
+  }
+  .about-text h3 {
+    font-size: 1.2rem;
+  }
+  
+  .contact-info {
+    flex-flow: wrap;
+  }
+  .contact-info  .info-item{
+    width: 50%;
+  }
 }
 
 @media (max-width: 768px) {
   .nav-links {
       display: none;
-  }
-  
-  .menu-btn {
-      display: block;
+      width: 100%;
   }
   
   .name {
-      font-size: 2.8rem;
+      font-size: 2.1rem;
   }
   
   .title {
       font-size: 1.5rem;
+      text-align: center;
   }
   
   .section-title {
@@ -659,16 +675,30 @@ ul {
       flex-direction: column;
       gap: 20px;
   }
+  .contact-info {
+    display: block;
+  }
+ 
+  .contact-info  .info-item{
+    width: 100%;
+  }
+  .navbar .container{
+    display: block;
+  }
+  
+  .menu-btn {
+      display: block;
+      position: absolute;
+      right: 30px;
+      top: 30px;
+      font-size: 35px;
+  }
+  
 }
 
 @media (max-width: 576px) {
   .hero {
       padding: 120px 0 80px;
-  }
-  
-  .hero-buttons {
-      flex-direction: column;
-      align-items: center;
   }
   
   .stats {
