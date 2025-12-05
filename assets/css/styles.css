@@ -124,13 +124,11 @@ ul {
 }
 
 .logo {
-  font-size: 1.8rem;
-  font-weight: 700;
-  color: var(--secondary-color);
+  float: left;
 }
 
-.logo span {
-  color: var(--primary-color);
+.logo image {
+  float: left;
 }
 
 .nav-links {
@@ -470,6 +468,17 @@ ul {
   margin-bottom: 10px;
   text-align: justify;
 }
+.timeline-content a {
+  display: block;
+  font-size: 12px;
+  padding-bottom: 10px;
+  color: var(--primary-color);
+}
+.timeline-content a:hover {
+  color: var(--secondary-color);
+}
+
+
 /* Contact Section */
 .contact {
   padding: 100px 0;
